@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite>
+<suite name="Suite" thread-count="5" parallel="tests">
+
+  <test name="Test1">
+	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC_001_HomepageNewsTest"/>
+      <class name="testCases.TC_002_FirstNewsTest"/>
+      <class name="testCases.TC_003_SecondNewsTest"/>
+      <class name="testCases.TC_004_ThirdNewsTest"/>
+      <class name="testCases.TC_005_FourthNewsTest"/>
+    </classes>
+  </test> 
+  
+  
+  <test name="Test2" thread-count="1">
+  <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testCases.TC_001_HomepageNewsTest"/>
+      <class name="testCases.TC_002_FirstNewsTest"/>
+      <class name="testCases.TC_003_SecondNewsTest"/>
+      <class name="testCases.TC_004_ThirdNewsTest"/>
+      <class name="testCases.TC_005_FourthNewsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <!--
+  <test name="Test2" thread-count="1">
+  <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testCases.TC_001_HomepageNewsTest"/>
+      <class name="testCases.TC_002_FirstNewsTest"/>
+      <class name="testCases.TC_003_SecondNewsTest"/>
+      <class name="testCases.TC_004_ThirdNewsTest"/>
+      <class name="testCases.TC_005_FourthNewsTest"/>
+    </classes>
+  </test> !-->
+  
+</suite> 
